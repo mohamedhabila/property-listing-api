@@ -31,6 +31,8 @@ public class Property {
 	private Integer avgRating;
 	private Integer locationId;
 	private String listFor;
+	private Integer shares;
+	private Integer remShares;
 	
 	@OneToMany(mappedBy = "property", fetch = FetchType.LAZY)
 	private List<Image> images = new ArrayList<>();
@@ -48,7 +50,7 @@ public class Property {
 	}	
 
 	public Property(Integer id, String name, Float price, String pDen, String description, Integer avgRating, Address address, Integer locationId,
-			Category category, String listFor) {
+			Category category, String listFor, Integer shares, Integer remShares) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -60,6 +62,8 @@ public class Property {
 		this.locationId = locationId;
 		this.category = category;
 		this.listFor = listFor;
+		this.shares = shares;
+		this.remShares = remShares;
 	}
 
 	public Integer getId() {
@@ -149,12 +153,28 @@ public class Property {
 	public void setListFor(String listFor) {
 		this.listFor = listFor;
 	}
+	
+	public Integer getShares() {
+		return shares;
+	}
+
+	public void setShares(Integer shares) {
+		this.shares = shares;
+	}
+	
+	public Integer getRemShares() {
+		return shares;
+	}
+
+	public void setRemShares(Integer remShares) {
+		this.remShares = remShares;
+	}
 
 	@Override
 	public String toString() {
 		return "Property [id=" + id + ", name=" + name + ", price=" + price + ", pDen=" + pDen + ", description="
 				+ description + ", avgRating=" + avgRating + ", locationId=" + locationId + ", listFor=" + listFor
-				+ ", address=" + address + ", category=" + category + "]";
+				+ ", address=" + address + ", category=" + category + ", shares=" + shares + ", remShares=" + remShares +"]";
 	}
 	
 }

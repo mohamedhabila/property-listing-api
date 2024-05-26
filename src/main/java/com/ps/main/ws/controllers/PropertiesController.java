@@ -144,7 +144,6 @@ public class PropertiesController {
 		public void setPropReview(@RequestBody UserProperty up) {
 			try {
 				upRepository.save(up);
-				System.out.println(upRepository.save(up));
 			}
 			catch (Exception e) {
 				e.printStackTrace();
