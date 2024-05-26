@@ -1,4 +1,4 @@
-package com.pl.main.ws;
+package com.ps.main.ws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

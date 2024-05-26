@@ -8,10 +8,10 @@
 		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.propertylisting</groupId>
-	<artifactId>PL_prototype-1.1</artifactId>
+	<groupId>com.propertystock</groupId>
+	<artifactId>PS_prototype-1.1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PL_prototype-1.1</name>
+	<name>PS_prototype-1.1</name>
 	<description>A web service for listing houses - PL</description>
 	<properties>
 		<java.version>11</java.version>
@@ -33,9 +33,9 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
