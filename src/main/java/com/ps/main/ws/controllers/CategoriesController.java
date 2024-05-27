@@ -17,9 +17,9 @@ public class CategoriesController {
 	@Autowired
 	CategoriesRepository categoriesRepository;
 	
-	//Fetch cities
+	//Fetch categories
 	@GetMapping("/categories")
-	public List<Category> getCities() {
+	public List<Category> getCategories() {
 		return (List<Category>) categoriesRepository.findAll();
 	}
 
