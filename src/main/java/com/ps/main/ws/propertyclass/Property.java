@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.Column;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,6 +28,7 @@ public class Property {
 	private String name;
 	private Float price;
 	private String pDen;
+	@Column(length = 8192)
 	private String description;
 	private Integer avgRating;
 	private Integer locationId;
