@@ -12,6 +12,7 @@ public class Location {
 	private Integer id;
 	
 	String city;
+	String state;
 
 	public Location() {
 		
@@ -19,10 +20,11 @@ public class Location {
 
 
 
-	public Location(Integer id, String city) {
+	public Location(Integer id, String city, String state) {
 		super();
 		this.id = id;
 		this.city = city;
+		this.state = state;
 	}
 
 	public Integer getId() {
@@ -39,6 +41,14 @@ public class Location {
 
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
 	}	
 	
 }
