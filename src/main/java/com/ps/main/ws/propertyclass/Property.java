@@ -196,7 +196,7 @@ public class Property {
 	public String toString() {
 		return "Property [id=" + id + ", name=" + name + ", price=" + price + ", pDen=" + pDen + ", description="
 				+ description + ", avgRating=" + avgRating + ", locationId=" + locationId + ", listFor=" + listFor
-				+ ", address=" + address + ", category=" + category + ", shares=" + shares + ", remShares=" + remShares + "size=" + size +"]";
+				+ ", address=" + address + ", category=" + category + ", shares=" + shares + ", remShares=" + remShares + "size=" + size + "rooms=" + rooms +"]";
 	}
 	
 }
