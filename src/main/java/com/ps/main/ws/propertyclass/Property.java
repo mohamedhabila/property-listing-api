@@ -36,6 +36,7 @@ public class Property {
 	private Integer shares;
 	private Integer remShares;
 	private Integer size;
+	private Integer rooms;
 	
 	@OneToMany(mappedBy = "property", fetch = FetchType.LAZY)
 	private List<Image> images = new ArrayList<>();
@@ -53,7 +54,7 @@ public class Property {
 	}	
 
 	public Property(Integer id, String name, Float price, String pDen, String description, Integer avgRating, Address address, Integer locationId,
-			Category category, String listFor, Integer shares, Integer remShares) {
+			Category category, String listFor, Integer shares, Integer remShares, Integer size, Integer rooms) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -67,6 +68,8 @@ public class Property {
 		this.listFor = listFor;
 		this.shares = shares;
 		this.remShares = remShares;
+		this.size = size;
+		this.rooms = rooms;
 	}
 
 	public Integer getId() {
@@ -179,6 +182,14 @@ public class Property {
 
 	public void setSize(Integer size) {
 		this.size = size;
+	}
+
+	public Integer getRooms() {
+		return rooms;
+	}
+
+	public void setRooms(Integer rooms) {
+		this.rooms = rooms;
 	}
 
 	@Override
