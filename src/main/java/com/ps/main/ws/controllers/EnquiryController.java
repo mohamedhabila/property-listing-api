@@ -15,7 +15,7 @@ public class EnquiryController {
 	
 	@Autowired
 	EnquiryRepository enquiryRepository;
-	
+
 	//Add Enquiry
 	@PostMapping("/enquiry")
 	public Enquiry addEnquiry(@RequestBody Enquiry enquiry) {

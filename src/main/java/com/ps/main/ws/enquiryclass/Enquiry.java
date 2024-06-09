@@ -21,24 +21,21 @@ public class Enquiry {
     private String phoneNumber;
     private Integer numberOfShares;
     private String notes;
-	
-	@ManyToOne
-	@JoinColumn(name = "property_id")
-	private Property property;
+	private Integer property_id;
 
 	public Enquiry() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Enquiry(Integer id, String fullName, String phoneNumber, int numberOfShares, String notes, Property property) {
+	public Enquiry(Integer id, String fullName, String phoneNumber, int numberOfShares, String notes, Integer property_id) {
 		super();
 		this.id = id;
 		this.fullName = fullName;
         this.phoneNumber = phoneNumber;
 		this.numberOfShares = numberOfShares;
         this.notes = notes;
-		this.property = property;
+		this.property_id = property_id;
 	}
 
 	public Integer getId() {
@@ -82,17 +79,17 @@ public class Enquiry {
 	}
 
 	@JsonIgnore
-	public Property getProperty() {
-		return property;
+	public Integer getProperty_id() {
+		return property_id;
 	}
 
-	public void setProperty(Property property) {
-		this.property = property;
+	public void setProperty_id(Integer property_id) {
+		this.property_id = property_id;
 	}
 
 	@Override
 	public String toString() {
-		return "Enquiry [id=" + id + ", fullName=" + fullName + ", phoneNumber=" + phoneNumber + ", numberOfShares=" + numberOfShares + ", notes=" + notes + ", property=" + property + "]";
+		return "Enquiry [id=" + id + ", fullName=" + fullName + ", phoneNumber=" + phoneNumber + ", numberOfShares=" + numberOfShares + ", notes=" + notes + ", property_id=" + property_id + "]";
 	}
 
 }
