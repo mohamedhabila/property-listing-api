@@ -28,7 +28,7 @@ public class Enquiry {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Enquiry(Integer id, String fullName, String phoneNumber, int numberOfShares, String notes, Integer propertyId) {
+	public Enquiry(Integer id, String fullName, String phoneNumber, Integer numberOfShares, String notes, Integer propertyId) {
 		super();
 		this.id = id;
 		this.fullName = fullName;
@@ -78,7 +78,6 @@ public class Enquiry {
 		this.notes = notes;
 	}
 
-	@JsonIgnore
 	public Integer getPropertyId() {
 		return propertyId;
 	}
