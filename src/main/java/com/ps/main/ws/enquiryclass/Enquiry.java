@@ -21,21 +21,21 @@ public class Enquiry {
     private String phoneNumber;
     private Integer numberOfShares;
     private String notes;
-	private Integer property_id;
+	private Integer propertyId;
 
 	public Enquiry() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Enquiry(Integer id, String fullName, String phoneNumber, int numberOfShares, String notes, Integer property_id) {
+	public Enquiry(Integer id, String fullName, String phoneNumber, int numberOfShares, String notes, Integer propertyId) {
 		super();
 		this.id = id;
 		this.fullName = fullName;
         this.phoneNumber = phoneNumber;
 		this.numberOfShares = numberOfShares;
         this.notes = notes;
-		this.property_id = property_id;
+		this.propertyId = propertyId;
 	}
 
 	public Integer getId() {
@@ -79,17 +79,17 @@ public class Enquiry {
 	}
 
 	@JsonIgnore
-	public Integer getProperty_id() {
-		return property_id;
+	public Integer getPropertyId() {
+		return propertyId;
 	}
 
-	public void setProperty_id(Integer property_id) {
-		this.property_id = property_id;
+	public void setPropertyId(Integer propertyId) {
+		this.propertyId = propertyId;
 	}
 
 	@Override
 	public String toString() {
-		return "Enquiry [id=" + id + ", fullName=" + fullName + ", phoneNumber=" + phoneNumber + ", numberOfShares=" + numberOfShares + ", notes=" + notes + ", property_id=" + property_id + "]";
+		return "Enquiry [id=" + id + ", fullName=" + fullName + ", phoneNumber=" + phoneNumber + ", numberOfShares=" + numberOfShares + ", notes=" + notes + ", propertyId=" + propertyId + "]";
 	}
 
 }
